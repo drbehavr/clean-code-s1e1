@@ -10,48 +10,52 @@
        media="screen"
        charset="utf-8">
 </head>
-<body>
-   <div class="aaa">
-      <img src="./eisenhower-matrix.jpg">
+<body class="application">
+   <header class="header">
+      <img class="header-image" src="./eisenhower-matrix.jpg">
       <a 
-         class='more_inf'
+         class='header-link'
          href="https://goal-life.com/page/method/matrix-eisenhower">
-         Want more details&quest;
+         Want more details?
       </a>
-   </div>
-<div class="centered-main-page-element">
-   <p id='topSectionForAddingElementToList'>
-      <label for="new-task">Add Item</label>
+   </header>
+<main class="main">
+   <section id='add-task' class="section-app">
+      <label for="new-task" class="section-app__title">Add Item</label>
       <div class="task-row-wrapper">
-         <input id='new-task'class="task" type="text">
-         <button>Add</button>
+         <input id='new-task'class="add-task__input" type="text">
+         <button class="btn">Add</button>
       </div>
-</p>
-<h3>Todo</h3>
- <ul id='incompleteTasks'>
-   <li>
-      <input type='checkbox'><label class="task">Pay Bills</label>
-      <input type="text" class="task">
-      <button class="edit">Edit</button>
-      <button class="delete">
-         <img src="./remove.svg">
+</section>
+<section class="section-app">
+<h3 class="section-app__title">Todo</h3>
+ <ul id='incomplete-tasks' class="section-app__task-items">
+   <li class="section-app__task-item task-item">
+      <input type='checkbox' class="task item__checkbox">
+      <label class="task-item__label">Pay Bills</label>
+      <input type="text" class="task-item__input">
+      <button class="btn edit">Edit</button>
+      <button class="btn delete">
+         <img class="btn__image" src="./remove.svg">
       </button>
    </li>
-<li class="editMode">
-   <input type="checkbox">
-   <label class="task">Go Shopping</label>
-   <input type="text" value="Go Shopping" class="task">
-   <button class='edit'>Save</button>
-   <button class="delete">
-      <img src="./remove.svg">
+<li class="section-app__task-item task-item edit-mode">
+   <input type="checkbox" class="task item__checkbox">
+   <label class="task-item__label">Go Shopping</label>
+   <input type="text" value="Go Shopping" class="task-item__input">
+   <button class='btn edit'>Save</button>
+   <button class="btn delete">
+      <img class="btn__image" src="./remove.svg">
    </button>
-</li>
-</ul>
+  </li>
+ </ul>
+</section>
+<section class="section-app">
 <h3>Completed</h3>
-<ul id="completed-tasks">
-   <li>
-      <input type="checkbox" checked>
-      <label class="task">See the Doctor</label>
+<ul id="completed-tasks" class="section-app__title">
+   <li class="section-app__task-item task-item">
+      <input type="checkbox" class="task item__checkbox" checked>
+      <label lass="task-item__label">See the Doctor</label>
       <input type="text" class="task">
       <button class="edit">Edit</button>
       <button class="delete">
@@ -59,7 +63,8 @@
       </button>
    </li>
   </ul>
-</div>
+ </section>
+</main>
 <script src="app.js"></script>
 </body>
 </html>
