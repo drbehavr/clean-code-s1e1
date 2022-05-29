@@ -133,7 +133,7 @@ input,
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.btn-image:hover {
+.btn__image:hover {
     transform: rotateZ(0);
 }
 
