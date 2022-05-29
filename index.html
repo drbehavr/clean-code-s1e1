@@ -21,7 +21,7 @@
    </header>
 <main class="main">
    <section id="add-task" class="section-app">
-      <label for="new-task" class="section-app__title">Add Item</label>
+      <label for="new-task" class="section-app__title add">Add Item</label>
       <div class="task-row-wrapper">
          <input id="new-task" class="add-task__input" type="text">
          <button class="btn">Add</button>
@@ -39,7 +39,7 @@
          <img class="btn__image" src="./remove.svg" alt="">
       </button>
    </li>
-<li class="section-app__task-item task-item edit-mode">
+<li class="section-app__task-item task-item  edit-mode">
    <input type="checkbox" class="task-item__checkbox">
    <label class="task-item__label">Go Shopping</label>
    <input type="text" value="Go Shopping" class="task-item__input">
@@ -51,11 +51,11 @@
  </ul>
 </section>
 <section class="section-app">
-<h3>Completed</h3>
-<ul id="completed-tasks" class="section-app__title">
+<h3 class="section-app__title">Completed</h3>
+<ul id="completed-tasks" class="section-app__task-items completed">
    <li class="section-app__task-item task-item">
       <input type="checkbox" class="task-item__checkbox" checked>
-      <label lass="task-item__label">See the Doctor</label>
+      <label class="task-item__label">See the Doctor</label>
       <input type="text" class="task-item__input">
       <button class="btn edit">Edit</button>
       <button class="btn delete">
