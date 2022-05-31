@@ -149,10 +149,10 @@ input,
 }
 
 .edit-mode .task-item__input {
-    display: none;
+    display: inline-block;
     width: 224px
 }
 
 .edit-mode .task-item__label {
-    display: inline-block;
+    display: none;
 }
